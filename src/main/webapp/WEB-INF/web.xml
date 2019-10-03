@@ -5,12 +5,54 @@
   <display-name>Archetype Created Web Application</display-name>
 
   <servlet>
-    <servlet-name>mainServlet</servlet-name>
-    <servlet-class>servlets.MainServlet</servlet-class>
+    <servlet-name>initializeServlet</servlet-name>
+    <servlet-class>servlet.initializeServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>mainServlet</servlet-name>
-    <url-pattern>/hello</url-pattern>
+    <servlet-name>initializeServlet</servlet-name>
+    <url-pattern>/initialize</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>demandServlet</servlet-name>
+    <servlet-class>servlet.demandServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>demandServlet</servlet-name>
+    <url-pattern>/demand</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>newProductServlet</servlet-name>
+    <servlet-class>servlet.newProductServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>newProductServlet</servlet-name>
+    <url-pattern>/newproduct</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>purchaseServlet</servlet-name>
+    <servlet-class>servlet.purchaseServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>purchaseServlet</servlet-name>
+    <url-pattern>/purchase</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>salesReportServlet</servlet-name>
+    <servlet-class>servlet.salesReportServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>salesReportServlet</servlet-name>
+    <url-pattern>/salesreport</url-pattern>
+  </servlet-mapping>
+
+
+
 </web-app>
